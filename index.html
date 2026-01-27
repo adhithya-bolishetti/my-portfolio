@@ -1,222 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhithya Bolishetti</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Adhithya Bolishetti - Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2230/2230756.png" type="image/x-icon">
 </head>
-
 <body>
     <header>
-        <div class="user">
-            <img src="./image.jpg" alt="">
-            <h1 class="name">Adhithya Bolishetti</h1>
-            <p class="post">CSE(AI & ML) Student</p>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">AB<span>.</span></a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#home">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#internship">Internship</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
     </header>
-    <div id="menu" class="fas fa-bars"></div>
-    <!-- header section ends -->
 
-    <!-- home section starts -->
-    <section class="home" id="home">
-        <h3>HI MYSELF!</h3>
-        <h2>ADHITHYA BOLISHETTI</h2>
-        <h3 class="post">i am <span class="typing-text"></span></h3>
-        <p>I am a B.Tech Computer Science Sudent(AI & ML) Currently in 3nd Year pursuing my degree from Vignan Institute of Technology and Science</p>
-        <a class="know" href="#about"><button class="btn">Know Me<i class="fas fa-user"></i></button></a>
-
-        <div class="share">
-            <a href="https://x.com/Adhithya_24" target="_blank" class="fab fa-twitter"></a>
-            <a href="https://instagram.com/adhithya_24" target="_blank" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/adhithya-bolishetti-2434-ad" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://github.com/Adhithya-bolishetti" target="_blank" class="fab fa-github"></a>
-            <a href="#" class="fas fa-download"></a>
-
-        </div>
-    </section>
-    <!-- home section end -->
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <h1 class="heading">About Me</h1>
-        <div class="row">
-            <div class="info">
-                <h3 data-aos="slide-right"><span>Name:</span>Adhithya Bolishetti</h3>
-                <h3 data-aos="slide-left"><span>Graduation Year:</span>2022-2026</h3>
-                <h3 data-aos="slide-right"><span>Branch:</span>Computer Science of Engineering(AI & ML)</h3>
-                <h3 data-aos="slide-left"><span>Institue:</span>Vignan Institute of Technology and Science</h3>
-                <h3 data-aos="slide-right"><span>Current Post:</span>Student</h3>
-                <a data-aos="flip-right" href="#" target="_blank"><button class="btn">My Resume <i
-                            class="fas fa-download"></i></button></a>
-            </div>
-            <div class="counter">
-                <div class="box" data-aos="slide-right" data-aos-duration="1000">
-                    <span>1 star</span>
-                    <h3>on Codechef</h3>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I am Adhithya Bolishetti</h1>
+                <h2>Aspiring Software Developer</h2>
+                <p>Aspiring Software Developer with strong foundations in problem-solving, full-stack development, and AI-driven applications. Passionate about building scalable solutions, learning emerging technologies, and contributing meaningfully to high-impact engineering teams.</p>
+                <div class="contact-info-hero">
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                    <p><i class="fas fa-envelope"></i> adhithya.bolishetti@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 93923 91909</p>
                 </div>
-                <div class="box" data-aos="zoom-in">
-                    <span>2</span>
-                    <h3>Projects Completed</h3>
-                </div>
-                <div class="box" data-aos="slide-left">
-                    <span>5 star</span>
-                    <h3>on Hackerrank</h3>
-                </div>
-                <div class="box" data-aos="slide-right">
-                    <span>3 star</span>
-                    <h3>on Leetcode</h3>
-                </div>
-                <div class="box" data-aos="slide-left">
-                    <span>3+</span>
-                    <h3>Certificates</h3>
+                <div class="hero-links">
+                    <a href="https://linkedin.com/in/adhithyabolishetti" target="_blank" class="hero-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Adhithya-bolishetti" target="_blank" class="hero-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:adhithya.bolishetti@gmail.com" class="hero-link">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
                 </div>
             </div>
-
         </div>
+        <div class="hero-bg-shape"></div>
     </section>
-    <!-- about section end -->
 
-    <!-- education section starts -->
     <section class="education" id="education">
-        <h1 class="heading">My Education</h1>
-        <div class="box-container">
-            <div class="box" data-aos="slide-right">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2020</span>
-                <h3>Passed High School</h3>
-                <h4>Marks Obtained:9.8 CGPA</h4>
-                <h4>Year:2020</h4>
-                <h4>Institue:Harsha Convent High School,TG</h4>
-            </div>
-            <div class="box" data-aos="slide-left">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2020-2022</span>
-                <h3>Passed Higher Secondary School</h3>
-                <h4>Marks Obtained:95.5%</h4>
-                <h4>Year:2022</h4>
-                <h4>Institue:Sri Chaitanya Junior Kalasala,TG</h4>
-            </div>
-            <div class="box" data-aos="slide-right">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2022-Current</span>
-                <h3>Undergraduate Degree</h3>
-                <h4>Marks Obtained:8.06CGPA</h4>
-                <h4>Year:2026</h4>
-                <h4>Institue:Vignan Institute of Technology and Science</h4>
-            </div>
-            <div class="box" data-aos="slide-left">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2022-2026</span>
-                <h3>Certifications</h3>
-                <h4>* Programming in Java (NPTEL)</h4>
-                <h4>* Hackerrank Java Certificate</h4>
-                <h4>* Introduction to Artificial Intelligence (IBM-Coursera)</h4>
-            </div>
-        </div>
-    </section>
-    <!-- education section ends -->
-    <!-- skills section strats -->
-    <section class="skills" id="skills">
-        <h1 class="heading">My Skills</h1>
-        <div class="row">
-            <div class="progress">
-                <h3> C <span>60%</span> </h3>
-                <div class="bar cpp"><span class="anim reveal"></span></div>
-                <h3> Data Structure <span>60%</span> </h3>
-                <div class="bar dsa"><span class="anim reveal"></span></div>
-                <h3> Java <span>70%</span> </h3>
-                <div class="bar java"><span class="anim reveal"></span></div>
-                <h3> Python <span>60%</span> </h3>
-                <div class="bar python"><span class="anim reveal"></span></div>
-                <h3> SQL <span>70%</span> </h3>
-                <div class="bar sql"><span class="anim reveal"></span></div>
-            </div>
-             <div class="progress">
-                <h3> HTML & CSS <span>80%</span> </h3>
-                <div class="bar html"><span class="anim reveal"></span></div>
-                <h3> NOdejs <span>50%</span> </h3>
-                <div class="bar nodejs"><span class="anim reveal"></span></div>
-                <h3> javascript <span>50%</span> </h3>
-                <div class="bar javascript"><span class="anim reveal"></span></div>
-                <h3> Reactjs <span>50%</span> </h3>
-                <div class="bar reactjs"><span class="anim reveal"></span></div>
-                <h3> Algorithms <span>70%</span> </h3>
-                <div class="bar algorithms"><span class="anim reveal"></span></div>
-            </div>
-        </div>
-    </section>
-    <!-- skills section ends -->
-    <!-- project section starts -->
-    <section class="projects" id="projects">
-        <h1 class="heading">My Projects</h1>
-        <div class="box-container" data-aos="zoom-in-down">
-            <a class="box" href="https://github.com/Adhithya-bolishetti/construct-connect.github.io" target="_blank">
-                <h4>Project 1</h4>
-                <h5>Construct Connect</h5>
-            </a>
-            <a class="box" href="#">
-                <h4>Click For More....</h4>
-            </a>
-        </div>
-    </section>
-    <!-- my project section ends -->
-    <!-- contacts section starts -->
-    <section class="contacts" id="contacts">
-        <h1 class="heading">Contact Me</h1>
-        <div class="row">
+        <div class="container">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-title">Vignan Institute of Technology and Science</h3>
+                        <span class="education-date">Nov 2022 - Jul 2026</span>
+                    </div>
+                    <p class="education-degree">Bachelor of Technology in Computer Science Engineering (AI & ML)</p>
+                    <p class="education-details"><strong>CGPA:</strong> 8.21</p>
+                    <p class="education-details"><strong>Coursework:</strong> C Programming, Data Structures, OOP through Java, DBMS, Computer Networks, Operating Systems</p>
+                </div>
 
-            <div class="content" data-aos="slide-right">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-title">Sri Chaitanya Junior Kalasala</h3>
+                        <span class="education-date">Sep 2020 - Apr 2022</span>
+                    </div>
+                    <p class="education-degree">Intermediate (MPC)</p>
+                    <p class="education-details"><strong>Percentage:</strong> 95.5%</p>
+                </div>
 
-                <h3 class="title">contact info</h3>
-
-                <div class="info">
-                    <h3> <i class="fas fa-envelope"></i> adhithya.bolishetti@gmail.com</h3>
-                    <h3><i class="fas fa-phone"></i>+919392391909</h3>
-                    <h3><i class="fas fa-map-marker-alt"></i>Bellampalli,Mancherial,Telangana,504251</h3>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-title">Harsha Convent High School</h3>
+                        <span class="education-date">Jun 2019 - Apr 2020</span>
+                    </div>
+                    <p class="education-degree">Secondary School Certificate</p>
+                    <p class="education-details"><strong>Percentage:</strong> 98%</p>
                 </div>
             </div>
-
-            <form action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="phone" placeholder="Phone" class="box">
-                <input type="text" placeholder="subject" class="box">
-                <textarea name="" id="" cols="30" rows="8" class="box message" placeholder="message"></textarea>
-                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
-            </form>
-
         </div>
-        
     </section>
-    <!-- contacts section ends -->
-    <a href="#home" >
-        <img class="top" src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-22-1024.png" alt="">
-    </a>
 
-    <div class="credits">Copyright<span> Adhithya Bolishetti</span> | all rights reserved |2024. </div>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">MediFind - Doctor Recommendation System</h3>
+                        <p class="project-description">Developed a full-stack healthcare platform enabling patients to search for doctors by symptoms or location. Implemented appointment booking and real-time availability tracking to streamline consultations. Designed RESTful APIs and integrated MongoDB for efficient patient and doctor data management.</p>
+                        <div class="project-features">
+                            <p><i class="fas fa-check-circle"></i> Ensured compatibility across browsers and responsiveness for mobile devices</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag highlight">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/Adhithya-bolishetti/MediFind" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">AI Research Paper Analyzer</h3>
+                        <p class="project-description">Built an AI-powered Streamlit application to generate summaries and answer questions from research papers. Applied semantic chunking and vector search using FAISS and ChromaDB for contextual retrieval. Integrated Gemini LLM to provide intelligent responses based on document embeddings.</p>
+                        <div class="project-features">
+                            <p><i class="fas fa-check-circle"></i> Enhanced research productivity by automating paper understanding and key insight extraction</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag highlight">LangChain</span>
+                            <span class="project-tag">Gemini API</span>
+                            <span class="project-tag">FAISS</span>
+                            <span class="project-tag">ChromaDB</span>
+                            <span class="project-tag">SentenceTransformers</span>
+                        </div>
+                        <a href="https://github.com/Adhithya-bolishetti/AI-Research-Paper-Analyzer" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="internship" id="internship">
+        <div class="container">
+            <h2 class="section-title">INTERNSHIP</h2>
+            <div class="internship-card">
+                <div class="internship-header">
+                    <h3 class="internship-title">Web Developer Intern</h3>
+                    <span class="internship-company">Prodigy InfoTech</span>
+                    <span class="internship-date">Nov 2024 - Dec 2024</span>
+                </div>
+                <div class="internship-details">
+                    <ul>
+                        <li>Developed responsive web interfaces using HTML, CSS, and JavaScript</li>
+                        <li>Implemented interactive UI components to improve user experience</li>
+                        <li>Optimized layouts ensuring compatibility across browsers and responsiveness for mobile devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & AI/ML Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>LangChain</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>FAISS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>ChromaDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>SentenceTransformers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core CS & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Data Structures</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-object-group"></i>
+                            <span>OOP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>DBMS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="additional-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3 class="info-title">CERTIFICATES</h3>
+                    <ul class="info-list">
+                        <li>Programming in Java - NPTEL</li>
+                        <li>SQL (Structured Query Language) - HackerRank</li>
+                        <li>Python - HackerRank</li>
+                        <li>Introduction to Artificial Intelligence - IBM SkillsBuild</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-title">ADDITIONAL INFORMATION</h3>
+                    <ul class="info-list">
+                        <li>Member, Association for Computing Machinery (ACM) Student Chapter</li>
+                        <li>Finalist, V'hack 2025 Hackathon - Recognized among top teams for innovative solution development</li>
+                        <li><strong>Languages:</strong> English, Hindi, Telugu</li>
+                        <li><strong>Soft Skills:</strong> Problem Solving, Leadership, Collaboration, Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-info">
+                <p>Feel free to reach out to discuss opportunities or collaborations</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> adhithya.bolishetti@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 93923 91909</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                </div>
+                <div class="resume-access">
+                    <button id="resumeRequestBtn">Request Resume Access</button>
+                    <div id="resumeForm" class="resume-form">
+                        <input type="email" id="requestorEmail" placeholder="Your email address">
+                        <input type="text" id="companyName" placeholder="Company name">
+                        <button id="sendRequestBtn">Send Request</button>
+                        <p class="form-note">I'll email my resume directly to you</p>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/adhithyabolishetti" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Adhithya-bolishetti" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:adhithya.bolishetti@gmail.com" class="contact-email">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Created By Adhithya Bolishetti &copy; <span id="currentYear"></span></p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
