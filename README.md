@@ -6,8 +6,7 @@ A modern, responsive portfolio website showcasing my skills, projects, education
 
 ## Live Demo
 
-[Click here to view the live portfolio](https://yourusername.github.io/portfolio-website/)  
-*(Replace with your actual deployment link)*
+[Click here to view the live portfolio](https://my-portfolio-seven-puce-39.vercel.app/)  
 
 ## Features
 
