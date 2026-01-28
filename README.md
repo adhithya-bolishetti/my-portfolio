@@ -43,7 +43,7 @@ A modern, responsive portfolio website showcasing my skills, projects, education
 
 ## Quick Start
 
-### Option 1: Local Setup (Recommended)
+### Option 1: Local Setup
 1. **Clone or download** the repository
    ```bash
    git clone https://github.com/Adhithya-bolishetti/portfolio-website.git
