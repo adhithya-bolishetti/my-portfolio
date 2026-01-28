@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, education, and experience as an aspiring software developer.
 
-![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-blue) ![Responsive](https://img.shields.io/badge/Responsive-Yes-green) ![License](https://img.shields.io/badge/License-MIT-orange)
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-blue) ![Responsive](https://img.shields.io/badge/Responsive-Yes-green)
 
 ## Live Demo
 
