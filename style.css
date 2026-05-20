@@ -587,66 +587,61 @@ header {
     align-items: center;
     gap: 10px;
 }
-
-.resume-access {
-    margin: 30px 0;
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-#resumeRequestBtn {
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     background-color: white;
     color: var(--primary-color);
-    border: none;
     padding: 12px 25px;
     border-radius: 30px;
+    text-decoration: none;
+    border: none;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
 }
 
-#resumeRequestBtn:hover {
+.resume-btn:hover {
     background-color: var(--primary-color);
     color: white;
     transform: translateY(-3px);
 }
 
-.resume-form {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 20px auto 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    border-radius: 12px;
-}
-
-.resume-form input {
-    padding: 12px 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    background-color: white;
-}
-
-.resume-form input:focus {
-    outline: 2px solid var(--primary-color);
-}
-
-#sendRequestBtn {
+.download-btn {
     background-color: var(--primary-color);
     color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
 }
 
-#sendRequestBtn:hover {
+.download-btn:hover {
     background-color: var(--accent-color);
+}
+
+.resume-viewer {
+    display: none;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.resume-viewer iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
 }
 
 .form-note {

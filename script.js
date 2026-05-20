@@ -96,53 +96,21 @@ educationItems.forEach(item => {
     educationObserver.observe(item);
 });
 
-const resumeRequestBtn = document.getElementById('resumeRequestBtn');
-const resumeForm = document.getElementById('resumeForm');
-const sendRequestBtn = document.getElementById('sendRequestBtn');
-const requestorEmail = document.getElementById('requestorEmail');
-const companyName = document.getElementById('companyName');
+const viewResumeBtn = document.getElementById('viewResumeBtn');
+const resumeViewer = document.getElementById('resumeViewer');
 
-if (resumeRequestBtn && resumeForm) {
-    resumeRequestBtn.addEventListener('click', () => {
-        resumeForm.style.display = 'flex';
-        resumeRequestBtn.style.display = 'none';
+if (viewResumeBtn && resumeViewer) {
+
+    viewResumeBtn.addEventListener('click', () => {
+
+        if (resumeViewer.style.display === 'block') {
+            resumeViewer.style.display = 'none';
+            viewResumeBtn.innerHTML = '<i class="fas fa-eye"></i> View Resume';
+        } else {
+            resumeViewer.style.display = 'block';
+            viewResumeBtn.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Resume';
+        }
+
     });
-}
 
-if (sendRequestBtn) {
-    sendRequestBtn.addEventListener('click', () => {
-        const email = requestorEmail.value.trim();
-        const company = companyName.value.trim();
-        
-        if (!email || !company) {
-            alert('Please fill in both email address and company name.');
-            return;
-        }
-        
-        if (!validateEmail(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-        
-        alert(`Thank you! Your resume request has been sent. I'll email my resume to ${email} shortly.`);
-        
-        requestorEmail.value = '';
-        companyName.value = '';
-        resumeForm.style.display = 'none';
-        resumeRequestBtn.style.display = 'block';
-    });
 }
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-document.addEventListener('click', (e) => {
-    if (resumeForm && resumeForm.style.display === 'flex') {
-        if (!resumeForm.contains(e.target) && e.target !== resumeRequestBtn) {
-            resumeForm.style.display = 'none';
-            resumeRequestBtn.style.display = 'block';
-        }
-    }
-});
